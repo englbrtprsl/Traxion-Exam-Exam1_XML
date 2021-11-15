@@ -24,7 +24,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
                 string apiData = "Japan";
                 string apiKey = "c5d1f3535b24f58da88543ff29a5d5e2";
 
-                HttpResponseMessage respon = await client.GetAsync("?q=" + apiData + "&appid=" + apiKey);
+                HttpResponseMessage respon = await client.GetAsync("?q=" + apiData + "&appid=" + apiKey + "&mode=xml");
 
                 if (respon.StatusCode == HttpStatusCode.OK)
                 {
